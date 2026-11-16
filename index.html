@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09090d">
+  <meta name="description" content="กฎและแนวทางการใช้งานชุมชน VANTERION GROUP บน Discord">
+  <title>Community Rules — VANTERION GROUP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="VANTERION GROUP home">
+      <span class="brand-mark">V</span>
+      <span class="brand-copy"><strong>VANTERION</strong><small>GROUP / COMMUNITY</small></span>
+    </a>
+    <div class="top-actions">
+      <span class="status"><i></i><span data-i18n="community">COMMUNITY GUIDELINES</span></span>
+      <button class="lang-toggle" id="languageToggle" type="button" aria-label="Switch language">EN</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="eyebrow">A BETTER COMMUNITY STARTS HERE</span></div>
+      <h1><span data-i18n="titleLine1">กฎของ</span><br><span class="gradient-text">VANTERION</span></h1>
+      <p class="hero-description" data-i18n="intro">ยินดีต้อนรับสู่ชุมชนของเรา โปรดอ่านและปฏิบัติตามกฎเหล่านี้ เพื่อให้ทุกคนใช้งานพื้นที่ร่วมกันได้อย่างสบายใจและปลอดภัย</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="https://discord.gg/F7bA8V4Rqj" target="_blank" rel="noopener noreferrer"><span data-i18n="join">เข้าร่วม Discord</span><span aria-hidden="true">↗</span></a>
+        <button class="button button-secondary" id="copyAll" type="button"><span data-i18n="copyAll">คัดลอกกฎทั้งหมด</span><span aria-hidden="true">⌘</span></button>
+      </div>
+      <div class="hero-meta"><span><b>10</b> <span data-i18n="rulesCount">COMMUNITY RULES</span></span><span class="meta-dot"></span><span data-i18n="updated">PLEASE READ BEFORE CHATTING</span></div>
+    </section>
+
+    <section class="rules-section" aria-labelledby="rulesHeading">
+      <div class="section-heading">
+        <div><div class="section-kicker">01 / GUIDELINES</div><h2 id="rulesHeading" data-i18n="rulesHeading">กฎการใช้งาน</h2></div>
+        <p data-i18n="rulesSub">เรียบง่าย ชัดเจน และให้เกียรติซึ่งกันและกัน</p>
+      </div>
+      <div class="rules-grid" id="rulesGrid"></div>
+    </section>
+
+    <section class="enforcement">
+      <div class="enforcement-icon">!</div>
+      <div class="enforcement-copy">
+        <div class="section-kicker">02 / MODERATION</div>
+        <h2 data-i18n="enforceTitle">การดูแลและบทลงโทษ</h2>
+        <p data-i18n="enforceText">ทีมงานจะพิจารณาตามความรุนแรงและบริบทของเหตุการณ์ การดำเนินการอาจเริ่มตั้งแต่การตักเตือน จำกัดการส่งข้อความ (Timeout) นำออกจากเซิร์ฟเวอร์ หรือแบนถาวร โดยไม่จำเป็นต้องเรียงตามลำดับ</p>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="closing-orb"></div>
+      <div class="section-kicker">03 / BE PART OF IT</div>
+      <h2 data-i18n="closingTitle">สร้างชุมชนที่ดี<br>ไปด้วยกัน</h2>
+      <p data-i18n="closingText">ขอบคุณที่เป็นส่วนหนึ่งของ VANTERION GROUP</p>
+      <a class="button button-primary" href="https://discord.gg/F7bA8V4Rqj" target="_blank" rel="noopener noreferrer"><span data-i18n="joinNow">เข้าร่วมชุมชนตอนนี้</span><span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="footer-brand" href="#">VANTERION GROUP</a>
+    <span data-i18n="footer">Community Rules · Be respectful. Be responsible.</span>
+    <span>© <span id="year"></span> VANTERION</span>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
